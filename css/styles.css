@@ -1,0 +1,141 @@
+*{ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+} 
+
+.top-page {
+    background-image: url('../css/1.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 100%;
+    min-height: 230vh;
+}
+
+body, html{ 
+    margin: 0 auto;
+    height: 20vh;
+    background-color: black; 
+    color: white;
+} /* flex place le texte à droite de l'image sur fond bleu*/ 
+
+header.header { 
+    display: flex; 
+    align-items: center; 
+    background: darkblue; 
+} 
+
+/* width = hauteur image sur fond blueviolet en haut */ 
+header.header img { 
+    width: 600px; 
+} 
+
+nav.nav { 
+    display: flex; 
+    justify-content: space-between; 
+    list-style: none; 
+    width: 3000px; 
+    margin-left: 70px; 
+    margin-right: 50px;
+    height: 80px;
+}
+
+ /* nav.nav = texte sur fond vert, margin left = distance entre image et texte*/ 
+
+nav.nav li { 
+    color:orange;
+} /* nav.nav li = couleur texte sur fond darkblue */ 
+
+.nav-btn {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-weight: bold;
+    margin-left: 80px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    white-space: nowrap;
+}   
+
+.left { 
+    position: absolute; 
+    left: 100px; 
+    bottom: 300px;
+} 
+
+.right { 
+    position: absolute; 
+    right: 30px; 
+    bottom: 300px;
+} 
+
+.bottom { 
+    position: absolute; 
+    bottom: 30px; 
+} 
+
+.btn:hover { 
+    background-color: #555; 
+} 
+
+.buttons-container { 
+    display: flex; 
+    flex-direction: column; /* Disposition verticale des boutons */ 
+    justify-content: center; /* Centrer verticalement */ 
+    align-items: center; /* Centrer horizontalement */ 
+    height: 150vh; /* Prendre toute la hauteur de la fenêtre */ 
+    position: relative; /* Permet de positionner les boutons en absolu */ 
+} 
+
+.btn { 
+    display: flex;
+    align-items: cenTer; 
+    padding: 10px 20px; 
+    margin: 100px; 
+    margin-left: 15vh;
+    margin-right: 25vh;
+    margin-bottom: 5vh;
+    text-decoration: none; 
+    color: #fff; 
+    background-color: purple; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.backdrarrow {
+    position: absolute;
+    top: 10359px;
+    right: 200px;
+    font-size: 24px;
+    text-decoration: none;
+    color:blue;
+}
+
+.backdearrow {
+    position: absolute;
+    top: 6745px;
+    right: 200px;
+    font-size: 24px;
+    text-decoration: none;
+    color:blue;
+}
+
+.backmiarrow {
+    position: absolute;
+    top: 7308px;
+    right: 200px;
+    font-size: 24px;
+    text-decoration: none;
+    color:blue;
+}
+.image-list {
+    background-color: black;
+    margin-left: 100px;
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+}
