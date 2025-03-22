@@ -9,6 +9,13 @@
     }
 }
 
+@media(max-width: 480px) {
+    .element {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
 .top-page {
     background-image: url('../css/1.png');
     background-size: cover;
