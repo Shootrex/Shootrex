@@ -2,6 +2,13 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 } 
 
+@media(max-width: 768px) {
+    .element {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
 .top-page {
     background-image: url('../css/1.png');
     background-size: cover;
@@ -34,10 +41,9 @@ nav.nav {
     display: flex; 
     justify-content: space-between; 
     list-style: none; 
-    width: 3000px; 
-    margin-left: 70px; 
-    margin-right: 50px;
-    height: 80px;
+    width: 190%; 
+    margin-left: 4%; 
+    margin-right: 3%;
 }
 
  /* nav.nav = texte sur fond vert, margin left = distance entre image et texte*/ 
