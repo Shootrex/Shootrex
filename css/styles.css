@@ -16,14 +16,32 @@
 
 body, html{ 
     margin: 0 auto;
-    height: 20vh;
     background-color: black; 
     color: white;
-} /* flex place le texte à droite de l'image sur fond bleu*/ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
 
 header.header { 
     display: flex; 
-    align-items: center; 
+    align-items: center;
+    justify-content: space-between;
+    height: 112px;
+    width: 100%;
+    box-sizing: border-box;
     background: darkblue; 
 } 
 
@@ -81,9 +99,12 @@ nav.nav li {
 } 
 
 .buttons-container { 
-    display: flex; 
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column; /* Disposition verticale des boutons */ 
     justify-content: center; /* Centrer verticalement */ 
+    gap: 20px;
+    margin-top: 20px;
     align-items: center; /* Centrer horizontalement */ 
     height: 150vh; /* Prendre toute la hauteur de la fenêtre */ 
     position: relative; /* Permet de positionner les boutons en absolu */ 
@@ -140,18 +161,3 @@ h1 {
     text-align: center;
     color: blue;
 }
-
-
-@media screen and (max-width: 768px) {
-    .flex-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    body {
-      text-align: center;
-    }
-  }
-  
